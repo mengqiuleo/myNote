@@ -8,13 +8,13 @@
 
 ### Ⅰ HTTP报文结构分析-请求报文
 
-![](E:\note\408\HTTP图片\请求.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042013397.jpg)
 
 1. 起始行（start line）：描述请求或响应的基本信息；分为请求行和状态行
 2. 头部字段集合（header）：使用 key-value 形式更详细地说明报文；分为请求头和响应头
 3. 消息正文（entity）：实际传输的数据，它不一定是纯文本，可以是图片、视频等二进制数据。
 
-<img src="E:\note\408\极客时间HTTP图片\结构.jpg" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042013398.jpg" style="zoom:80%;" />
 
 
 
@@ -29,7 +29,7 @@
 
 这三个部分通常使用空格（space）来分隔，最后要用CRLF 换行表示结束。
 
-<img src="E:\note\408\极客时间HTTP图片\请求行.jpg" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042013399.jpg" style="zoom:80%;" />
 
 
 
@@ -42,7 +42,7 @@
 2. 状态码：一个三位数，用代码的形式表示处理的结果，比如 200 是成功，500 是服务器错误；
 3. 原因：作为数字状态码补充，是更详细的解释文字，帮助人理解原因。
 
-<img src="E:\note\408\极客时间HTTP图片\状态行.jpg" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042013400.jpg" style="zoom:80%;" />
 
 
 
@@ -72,13 +72,13 @@
 
 这些字段可以用在请求报文上，也可以用在响应报文上。
 
-<img src="E:\note\408\HTTP图片\通用.jpg" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042013401.jpg" style="zoom:80%;" />
 
 
 
 ##### ②请求报文头
 
-<img src="E:\note\408\HTTP图片\请求报文头.jpg" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042013402.jpg" style="zoom:80%;" />
 
 **Host字段**，它属于请求字段，只能出现在请求头里，它同时也是唯一一个 HTTP/1.1 规范里要求必须出现的字段，也就是说，如果请求头里没有 Host，那这就是一个错误的报文。
 
@@ -88,19 +88,19 @@ Host 字段告诉服务器这个请求应该由哪个主机来处理，当一台
 
 ##### ③响应报文头
 
-<img src="E:\note\408\HTTP图片\响应报文头.jpg" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042013403.jpg" style="zoom:80%;" />
 
 
 
 ##### ④实体报文头
 
-<img src="E:\note\408\HTTP图片\实体报文头.jpg" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042013404.jpg" style="zoom:80%;" />
 
 
 
 ### Ⅱ HTTP报文结构分析-响应报文
 
-<img src="E:\note\408\HTTP图片\响应.jpg" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042013405.jpg" style="zoom:80%;" />
 
 
 
@@ -128,7 +128,7 @@ HTTP 协议里为什么要有“请求方法”这个东西呢？
 7. OPTIONS：列出可对资源实行的方法；
 8. TRACE：追踪请求 - 响应的传输路径。
 
-<img src="E:\note\408\极客时间HTTP图片\请求方法.jpg" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042013406.jpg" style="zoom:80%;" />
 
 
 
@@ -228,7 +228,7 @@ URI 本质上是一个字符串，这个字符串的作用是**唯一地标记�
 URI 最常用的形式，由 scheme、host:port、path 和 query 四个部分组成，但有的部分可以
 视情况省略。
 
-<img src="E:\note\408\极客时间HTTP图片\URI.jpg" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042013407.jpg" style="zoom:80%;" />
 
 
 
@@ -290,7 +290,7 @@ file:///D:/http_study/www/
 
 运行 Chrome，用 F12 打开开发者工具，然后在地址栏里输入“http://www.chrono.com/11-1”，得到的结果如下图。
 
-<img src="E:\note\408\极客时间HTTP图片\举例.jpg" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042013408.jpg" style="zoom:80%;" />
 
 
 
@@ -327,7 +327,7 @@ file:///D:/http_study/www/
 
 URI 还有一个“真正”的完整形态，如下图所示。
 
-<img src="E:\note\408\极客时间HTTP图片\真正.jpg" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042013409.jpg" style="zoom:80%;" />
 
 
 
@@ -375,7 +375,7 @@ URI 转义的规则有点“简单粗暴”，直接把非 ASCII 码或特殊字
 
 状态行的结构，有三部分：
 
-<img src="E:\note\408\极客时间HTTP图片\状态行2.jpg" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042013410.jpg" style="zoom:80%;" />
 
 开头的 Version 部分是 HTTP 协议的版本号，通常是HTTP/1.1，用处不是很大。
 
@@ -389,7 +389,7 @@ URI 转义的规则有点“简单粗暴”，直接把非 ASCII 码或特殊字
 
 目前 RFC 标准里规定的状态码是三位数，RFC 标准把状态码分成了五类，用数字的第一位表示分类，而 0~99 不用，这样状态码的实际可用范围就大大缩小了，由 000~999 变成了 100~599。
 
-![](E:\note\408\极客时间HTTP图片\状态码.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042013411.jpg)
 
 客户端作为请求的发起方，获取响应报文后，需要通过状态码知道请求是否被正确处理，是否要再次发送请求，如果出错了原因又是什么。这样才能进行下一步的动作，要么发送新请求，要么改正错误重发请求。
 
@@ -498,7 +498,7 @@ HTTP/1.1 206 Partial Content （使用断点续传方式）
 
 ## 五、HTTP有哪些特点？
 
-<img src="E:\note\408\极客时间HTTP图片\特点.jpg" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042013412.jpg" style="zoom:80%;" />
 
 
 

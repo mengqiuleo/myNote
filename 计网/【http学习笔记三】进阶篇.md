@@ -44,7 +44,7 @@ MIME 把数据分成了八大类，每个大类下再细分出多个子类，形
 
 HTTP 协议为此定义了两个 **Accept 请求头字段**和两个**Content 实体头字段**，用于客户端和服务器进行“内容协商”。也就是说，客户端用 Accept 头告诉服务器希望接收什么样的数据，而服务器用 Content 头告诉客户端实际发送了什么样的数据。
 
-![](E:\note\408\极客时间HTTP图片\body.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016598.jpg)
 
 **Accept**字段标记的是客户端可理解的 MIME type，可以用“,”做分隔符列出多个类型，让服务器有更多的选择余地，例如下面的这个头：
 
@@ -109,7 +109,7 @@ Content-Type: text/html; charset=utf-8`
 
 指客户端和服务器端就响应的资源内容进行交涉，然后提供给客户端最为合适的资源。内容协商会以响应资源的语言，字符集，编码方式等作为判断的基准。
 
-![](E:\note\408\极客时间HTTP图片\内容协商.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016599.jpg)
 
 
 
@@ -191,7 +191,7 @@ Vary 字段可以认为是响应报文的一个特殊的“版本标记”。每
 3. 数据块紧跟在长度头后，最后也用 CRLF 结尾，但数据不包含 CRLF；
 4. 最后用一个长度为 0 的块表示结束，即“0\r\n\r\n”。
 
-![](E:\note\408\极客时间HTTP图片\分块传输.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016600.jpg)
 
 
 
@@ -241,7 +241,7 @@ HTTP 协议为了满足这样的需求，提出了“**范围请求**”（range
 多段字节序列组成的，并且还要用一个参数**“boundary=xxx”**给出段之间的分隔标记。
 
 多段数据的格式与分块传输也比较类似，但它需要用分隔标记 boundary 来区分不同的片段，可以通过图来对比一下。
-![](E:\note\408\极客时间HTTP图片\分段.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016601.jpg)
 
 每一个分段必须以“- -boundary”开始（前面加两个“-”），之后要用“Content-Type”和“Content-
 Range”标记这段数据的类型和所在范围，然后就像普通的响应头一样以回车换行结束，再加上分段数据，最后用一个“- -boundary- -”（前后各有两个“-”）表示所有的分段结束。
@@ -273,9 +273,9 @@ Range”标记这段数据的类型和所在范围，然后就像普通的响应
 - HTTP/1.0中，默认使用的是短连接。也就是说，浏览器和服务器每进行一次HTTP操作，就建立一次连接，结束就中断
 - HTTP/1.1起，默认使用长连接，用以保持连接特性
 
-![](E:\note\408\极客时间HTTP图片\长连接.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016602.jpg)
 
-![](E:\note\408\极客时间HTTP图片\长-短.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016603.jpg)
 
 
 
@@ -296,7 +296,7 @@ HTTP 协议最初（0.9/1.0）是个非常简单的协议，通信过程也采�
 
 这样虽然不能改善 TCP 的连接效率，但基于“分母效应”，每个“请求 - 应答”的无效时间就会降低不少，整体传输效率也就提高了。
 
-![](E:\note\408\极客时间HTTP图片\长短对比.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016604.jpg)
 
 
 
@@ -344,7 +344,7 @@ HTTP 协议最初（0.9/1.0）是个非常简单的协议，通信过程也采�
 
 如果队首的请求因为处理的太慢耽误了时间，那么队列里后面的所有请求也不得不跟着一起等待，结果就是其他的请求承担了不应有的时间成本。
 
-![](E:\note\408\极客时间HTTP图片\队头阻塞.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016605.jpg)
 
 
 
@@ -395,7 +395,7 @@ HTTP 协议和浏览器不是限制并发连接数量吗？好，那我就多开
 
 用 Chrome 访问URI “/18-1”，它会使用 302 立即跳转到“/index.html”。
 
-![](E:\note\408\极客时间HTTP图片\重定向.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016606.jpg)
 
 从这个实验可以看到，这一次“重定向”实际上发送了两次HTTP 请求，第一个请求返回了 302，然后第二个请求就被重定向到了“/index.html”。
 
@@ -403,7 +403,7 @@ HTTP 协议和浏览器不是限制并发连接数量吗？好，那我就多开
 
 看第一个请求返回的响应报文：
 
-![](E:\note\408\极客时间HTTP图片\重定向2.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016607.jpg)
 
 这里出现了一个新的头字段“**Location: /index.html**”，它就是 301/302 重定向跳转的秘密所在。
 
@@ -513,7 +513,7 @@ HTTP 的 Cookie 机制也是一样的道理，既然服务器记不住，那就�
 
 不过因为服务器的“记忆能力”实在是太差，一张小纸条经常不够用。所以，服务器有时会在响应头里添加多个 Set-Cookie，存储多个“key=value”。但浏览器这边发送时不需要用多个 Cookie 字段，只要在一行里用“;”隔开就行。
 
-![](E:\note\408\极客时间HTTP图片\cookie.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016608.jpg)
 
 **Cookie 是由浏览器负责存储的，而不是操作系统。所以，它是“浏览器绑定”的，只能在本浏览器内生效。**
 
@@ -599,7 +599,7 @@ Session是另一种记录客户状态的机制，保存在服务器上。客户�
 
 客户端浏览器再次访问时只需要从该Session中查找该客户的状态就可以了
 
-![](E:\note\408\极客时间HTTP图片\session.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016609.jpg)
 
 解释上图：
 
@@ -615,7 +615,7 @@ Session是另一种记录客户状态的机制，保存在服务器上。客户�
 
   就是直接把SessionID附加在URL的后面
 
-  ![](E:\note\408\HTTP图片\URL重写.jpg)
+  ![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016610.jpg)
 
 - 隐藏表单
 
@@ -660,7 +660,7 @@ Session是另一种记录客户状态的机制，保存在服务器上。客户�
 2. 服务器响应请求，返回资源，同时标记资源的有效期；
 3. 浏览器缓存资源，等待下次重用。
 
-<img src="E:\note\408\极客时间HTTP图片\缓存.jpg" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016611.jpg" style="zoom:80%;" />
 
 服务器标记资源有效期使用的头字段是“**Cache-Control**”，**里面的值“maxage=30”就是资源的有效时间**，相当于告诉浏览器，“这个页面只能缓存 30 秒，之后就算是过期，不能用。”
 
@@ -693,9 +693,9 @@ Session是另一种记录客户状态的机制，保存在服务器上。客户�
 
 #### Cache-Control
 
-<img src="E:\note\408\极客时间HTTP图片\缓存2.jpg" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016612.jpg" style="zoom:80%;" />
 
-<img src="E:\note\408\极客时间HTTP图片\流程图.jpg" style="zoom:75%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016613.jpg" style="zoom:75%;" />
 
 
 
@@ -781,23 +781,23 @@ ETag 还有“强”“弱”之分。
 
 #### 场景一：Expires
 
-![](E:\note\408\极客时间HTTP图片\expires.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016614.jpg)
 
 
 
 #### 场景二：If-Modified-Since && Last-Modified
 
-![](E:\note\408\极客时间HTTP图片\最新修改时间.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016615.jpg)
 
-![](E:\note\408\极客时间HTTP图片\最新修改时间2.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016616.jpg)
 
 
 
 #### 场景三：Etag && If-None-Match
 
-![](E:\note\408\极客时间HTTP图片\Etag.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016617.jpg)
 
-![](E:\note\408\极客时间HTTP图片\Etag2.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016618.jpg)
 
 
 
@@ -837,7 +837,7 @@ ETag 还有“强”“弱”之分。
 
 ### 浏览器操作对HTTP缓存的影响
 
-<img src="E:\note\408\极客时间HTTP图片\浏览器操作.jpg" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016619.jpg" style="zoom:80%;" />
 
 
 
@@ -847,7 +847,7 @@ ETag 还有“强”“弱”之分。
 
 ## 七、HTTP的代理服务
 
-![](E:\note\408\极客时间HTTP图片\代理.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016620.jpg)
 
 链条的起点还是客户端（也就是浏览器），中间的角色被称为代理服务器（proxyserver），链条的终点被称为源服务器（origin server），意思是数据的“源头”“起源”。
 
@@ -903,7 +903,7 @@ Via 是一个通用字段，请求头或响应头里都可以出现。每当报�
 
 例如下图中有两个代理：proxy1 和 proxy2，客户端发送请求会经过这两个代理，依次添加就是“Via: proxy1, proxy2”，等到服务器返回响应报文的时候就要反过来走，头字段就是“Via: proxy2, proxy1”。
 
-![](E:\note\408\极客时间HTTP图片\代理路.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016621.jpg)
 
 Via 字段只解决了客户端和源服务器判断是否存在代理的问题，还不能知道对方的真实信息。
 
@@ -996,7 +996,7 @@ HTTP 的服务器缓存功能主要由代理服务器来实现（即缓存代理
 
 代理服务收到源服务器发来的响应数据后需要做两件事。第一个当然是把报文转发给客户端，而第二个就是把报文存入自己的 Cache 里。
 
-<img src="E:\note\408\极客时间HTTP图片\缓存代理.jpg" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016622.jpg" style="zoom:80%;" />
 
 下一次再有相同的请求，代理服务器就可以直接发送 304 或者缓存数据，不必再从源服务器那里获取。这样就降低了客户端的等待时间，同时节约了源服务器的网络带宽。
 
@@ -1037,7 +1037,7 @@ HTTP 的服务器缓存功能主要由代理服务器来实现（即缓存代理
 
 下面的流程图是完整的服务器端缓存控制策略，可以同时控制客户端和代理。
 
-![](E:\note\408\极客时间HTTP图片\缓存代理2.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016623.jpg)
 
 注意：
 源服务器在设置完“Cache-Control”后必须要为报文加上“Lastmodified”或“ETag”字段。否则，客户端和代理后面就无法使用条件请求来验证缓存是否有效，也就不会有 304 缓存重定向。
@@ -1048,9 +1048,9 @@ HTTP 的服务器缓存功能主要由代理服务器来实现（即缓存代理
 
 客户端在 HTTP 缓存体系里要面对的是代理和源服务器，也必须区别对待。
 
-![](E:\note\408\极客时间HTTP图片\缓存代理3.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016624.jpg)
 
-![](E:\note\408\极客时间HTTP图片\缓存代理3.1.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042016625.jpg)
 
 
 

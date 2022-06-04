@@ -61,7 +61,7 @@ HTTPS，它能够鉴别危险的网站，并且尽最大可能保证你的上网
 
 HTTPS 名字里的“S”，它把 HTTP 下层的传输协议由 TCP/IP 换成了SSL/TLS，由“HTTP over TCP/IP”变成了“HTTP over SSL/TLS”，让 HTTP 运行在了安全的 SSL/TLS 协议上，收发报文不再使用 Socket API，而是调用专门的安全接口。
 
-![](E:\note\408\极客时间HTTP图片\安全.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042017792.jpg)
 
 
 
@@ -129,7 +129,7 @@ HTTPS 的安全性是由 TLS 来保证的。
 
 举个例子，你想要登录某网站，只要事先和它约定好使用一个对称密码，通信过程中传输的全是用密钥加密后的密文，只有你和网站才能解密。黑客即使能够窃听，看到的也只是乱码，因为没有密钥无法解出明文，所以就实现了机密性。
 
-![](E:\note\408\极客时间HTTP图片\对称加密.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042017793.jpg)
 
 TLS 里有非常多的对称加密算法可供选择，比如 RC4、DES、3DES、AES、ChaCha20等，但前三种算法都被认为是不安全的，通常都禁止使用，目前常用的只有 AES 和ChaCha20。
 
@@ -174,7 +174,7 @@ TLS 里有非常多的对称加密算法可供选择，比如 RC4、DES、3DES�
 >
 > 非对称加密可以解决“密钥交换”的问题。网站秘密保管私钥，在网上任意分发公钥，你想要登录网站只要用公钥加密就行了，密文只能由私钥持有者才能解密。而黑客因为没有私钥，所以就无法破解密文。
 
-![](E:\note\408\极客时间HTTP图片\非对称加密.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042017794.jpg)
 
 
 
@@ -195,7 +195,7 @@ TLS 里有非常多的对称加密算法可供选择，比如 RC4、DES、3DES�
 > 对方拿到密文后用私钥解密，取出会话密钥。这样，双方就实现了对称密钥的安全交换，后
 > 续就不再使用非对称加密，全都使用对称加密。
 
-![](E:\note\408\极客时间HTTP图片\混合加密.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042017795.jpg)
 
 
 
@@ -239,7 +239,7 @@ TLS 里有非常多的对称加密算法可供选择，比如 RC4、DES、3DES�
 这有个术语，叫哈希消息认证码（HMAC）。
 
 
-![](E:\note\408\极客时间HTTP图片\摘要.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042017796.jpg)
 
 
 
@@ -263,7 +263,7 @@ TLS 里有非常多的对称加密算法可供选择，比如 RC4、DES、3DES�
 
 签名和公钥一样完全公开，任何人都可以获取。但这个签名只有用私钥对应的公钥才能解开，拿到摘要后，再比对原文验证完整性，就可以像签署文件一样证明消息确实是你发的。
 
-<img src="E:\note\408\极客时间HTTP图片\数字签名.jpg" style="zoom:67%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042017797.jpg" style="zoom:67%;" />
 
 刚才的这两个行为也有专用术语，叫做“签名”和“验签”。
 
@@ -291,7 +291,7 @@ CA 对公钥的签名认证也是有格式的，不是简单地把公钥绑定�
 
 这还是信任链的问题。小一点的 CA 可以让大 CA 签名认证，但链条的最后，也就是RootCA，就只能自己证明自己了，这个就叫“自签名证书”（Self-Signed Certificate）或者“根证书”（Root Certificate）。你必须相信，否则整个证书信任链就走不下去了。
 
-<img src="E:\note\408\极客时间HTTP图片\CA.jpg" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042017798.jpg" style="zoom:80%;" />
 
 有了这个证书体系，操作系统和浏览器都内置了各大 CA 的根证书，上网的时候只要服务器发过来它的证书，就可以验证证书里的签名，顺着证书链（Certificate Chain）一层层地验证，直到找到根证书，就能够确定证书是可信的，从而里面的公钥也是可信的。
 

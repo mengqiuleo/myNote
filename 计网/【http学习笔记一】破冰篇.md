@@ -114,7 +114,7 @@ HTTP 就是**超文本传输协议**，也就是HyperText Transfer Protocol。
 先看一下 HTTP 的名字：“超文本传输协议”，它可以拆成三个部分，分别是：“超文
 本”“传输”和“协议”。
 
-<img src="E:\note\408\极客时间HTTP图片\HTTP.jpg" style="zoom:67%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042013623.jpg" style="zoom:67%;" />
 
 
 
@@ -391,7 +391,7 @@ TCP/IP 协议是一个“有层次的协议栈”。
 
 ### TCP/IP 网络分层模型
 
-<img src="E:\note\408\极客时间HTTP图片\四层.jpg" style="zoom:75%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042013624.jpg" style="zoom:75%;" />
 
 TCP/IP 协议总共有四层，就像搭积木一样，每一层需要下层的支撑，同时又支撑着上层，
 任何一层被抽掉都可能会导致整个协议栈坍塌。
@@ -441,7 +441,7 @@ MAC 层的传输单位是帧（frame），IP 层的传输单位是包（packet�
 
 OSI 模型分成了七层，部分层次与 TCP/IP 很像，从下到上分别是：
 
-<img src="E:\note\408\极客时间HTTP图片\七层.jpg" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042013625.jpg" style="zoom:80%;" />
 
 1. 第一层：物理层，网络的物理形式，例如电缆、光纤、网卡、集线器等等；
 2. 第二层：数据链路层，它基本相当于 TCP/IP 的链接层；
@@ -459,7 +459,7 @@ OSI 模型分成了七层，部分层次与 TCP/IP 很像，从下到上分别�
 
 ### 两个分层模型的映射关系
 
-<img src="E:\note\408\极客时间HTTP图片\映射.jpg" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042013626.jpg" style="zoom:80%;" />
 
 1. 第一层：物理层，TCP/IP 里无对应；
 2. 第二层：数据链路层，对应 TCP/IP 的链接层；
@@ -508,7 +508,7 @@ com 顶级域名服务器可以返回 apple.com 域名服务器的 IP 地址；
 3. 权威域名服务器（Authoritative DNS Server）：管理自己域名下主机的 IP 地址，比如
 apple.com 权威域名服务器可以返回 www.apple.com 的 IP 地址。
 
-<img src="E:\note\408\极客时间HTTP图片\DNS.jpg" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042013627.jpg" style="zoom:80%;" />
 
 
 

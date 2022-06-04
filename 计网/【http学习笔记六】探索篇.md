@@ -47,7 +47,7 @@ Nginx 里使用的 epoll，就好像是 HTTP/2 里的“多路复用”技术，
 
 通过这种方式，Nginx 就完全消除了 I/O 阻塞，把 CPU 利用得“满满当当”，又因为网络收发并不会消耗太多 CPU 计算能力，也不需要切换进程、线程，所以整体的 CPU 负载是相当低的。
 
-![](E:\note\408\极客时间HTTP图片\多路复用.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042019424.jpg)
 
 epoll 还有一个特点，大量的连接管理工作都是在操作系统内核里做的，这就减轻了应用程序的负担，所以 Nginx 可以为每个连接只分配很小的内存维护状态，即使有几万、几十万的并发连接也只会消耗几百 M 内存，而其他的 Web 服务器这个时候早就“Memory not enough”了。
 
@@ -167,7 +167,7 @@ WAF 也是一种“防火墙”，但它工作在七层，看到的不仅是 IP 
 
 于是，用户在上网的时候就不直接访问源站，而是访问离他“最近的”一个 CDN 节点，术语叫“**边缘节点**”（edge node），其实就是缓存了源站内容的代理服务器，这样一来就省去了“长途跋涉”的时间成本，实现了“网络加速”。
 
-![](E:\note\408\极客时间HTTP图片\CDN.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042019425.jpg)
 
 那么，CDN 都能加速什么样的“内容”呢？
 
@@ -279,7 +279,7 @@ WebSocket 虽然有“帧”，但却没有像 HTTP/2 那样定义“流”，�
 
 下图就是 WebSocket 的帧结构定义，长度不固定，最少 2 个字节，最多 14 字节。
 
-![](E:\note\408\极客时间HTTP图片\WebSocket.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042019426.jpg)
 
 开头的两个字节是必须的，也是最关键的。
 
@@ -315,7 +315,7 @@ WebSocket 的握手是一个标准的 HTTP GET 请求，但要带上两个协议
 `Sec-WebSocket-Key：一个 Base64 编码的 16 字节随机数，作为简单的认证密钥；
 Sec-WebSocket-Version：协议的版本号，当前必须是 13。`
 
-![](E:\note\408\极客时间HTTP图片\WS.jpg)
+![](https://cdn.jsdelivr.net/gh/mengqiuleo/images/202206042019427.jpg)
 
 服务器收到 HTTP 请求报文，看到上面的四个字段，就知道这不是一个普通的 GET 请求，而是 WebSocket 的升级请求，于是就不走普通的 HTTP 处理流程，而是构造一个特殊的“101 Switching Protocols”响应报文，通知客户端，接下来就不用 HTTP 了，全改用WebSocket 协议通信。
 
