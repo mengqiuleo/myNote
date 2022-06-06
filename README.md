@@ -4,4 +4,4 @@
 
 Github: [mengqiuleo](https://github.com/mengqiuleo)
 
-包括学习计算机基础时的笔记。
+同时，也有我学习前端的心路历程和一些思考感悟。
