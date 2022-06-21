@@ -24,19 +24,14 @@ csdn地址：[小飞侠Pan](https://blog.csdn.net/weixin_52834435?type=blog)
 
 ## 🤓使用指南
 
-### 🐭[CSS](https://github.com/mengqiuleo/myNote/tree/main/css)                      🐮[JS](https://github.com/mengqiuleo/myNote/tree/main/JavaScript)
-
-### 🐯[JS异步](https://github.com/mengqiuleo/myNote/tree/main/JS%E5%BC%82%E6%AD%A5)                    🐰[Vue2](https://github.com/mengqiuleo/myNote/tree/main/vue)
-
-### 🐲[es6](https://github.com/mengqiuleo/myNote/tree/main/es6)                      🐍[Vue3+TS](https://github.com/mengqiuleo/myNote/tree/main/vue3%2BTS)
-
-### 🐎[webpack](https://github.com/mengqiuleo/myNote/tree/main/webpack)                  🐐[计算机网络](https://github.com/mengqiuleo/myNote/tree/main/%E8%AE%A1%E7%BD%91)
-
-### 🙉[浏览器相关](https://github.com/mengqiuleo/myNote/tree/main/%E6%B5%8F%E8%A7%88%E5%99%A8)                 🐔[算法](https://github.com/mengqiuleo/myNote/tree/main/%E7%AE%97%E6%B3%95)
-
-### 🐶[操作系统](https://github.com/mengqiuleo/myNote/tree/main/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F)                   🐷[其他](https://github.com/mengqiuleo/myNote/tree/main/%E5%85%B6%E4%BB%96/git)
-
-### 💭[心路历程](https://github.com/mengqiuleo/myNote/tree/main/%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B)                   📄[vuepress博客搭建](https://github.com/mengqiuleo/myNote/tree/main/blog)
+| 🐭[CSS](https://github.com/mengqiuleo/myNote/tree/main/css)   | 🐮[JS](https://github.com/mengqiuleo/myNote/tree/main/JavaScript) |
+| :----------------------------------------------------------- | ------------------------------------------------------------ |
+| 🐯[JS异步](https://github.com/mengqiuleo/myNote/tree/main/JS%E5%BC%82%E6%AD%A5) | 🐰[Vue2](https://github.com/mengqiuleo/myNote/tree/main/vue)  |
+| 🐲[es6](https://github.com/mengqiuleo/myNote/tree/main/es6)   | 🐍[Vue3+TS](https://github.com/mengqiuleo/myNote/tree/main/vue3%2BTS) |
+| 🐎[webpack](https://github.com/mengqiuleo/myNote/tree/main/webpack) | 🐐[计算机网络](https://github.com/mengqiuleo/myNote/tree/main/%E8%AE%A1%E7%BD%91) |
+| 🙉[浏览器相关](https://github.com/mengqiuleo/myNote/tree/main/%E6%B5%8F%E8%A7%88%E5%99%A8) | 🐔[算法](https://github.com/mengqiuleo/myNote/tree/main/%E7%AE%97%E6%B3%95) |
+| 🐶[操作系统](https://github.com/mengqiuleo/myNote/tree/main/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F) | 🐷[其他](https://github.com/mengqiuleo/myNote/tree/main/%E5%85%B6%E4%BB%96/git) |
+| 💭[心路历程](https://github.com/mengqiuleo/myNote/tree/main/%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B) | 📄[vuepress博客搭建](https://github.com/mengqiuleo/myNote/tree/main/blog) |
 
 <br/>
 
