@@ -122,7 +122,7 @@ index.html作为入口，并在index.html中引入index.js
 
 当我们还未更改时，运行程序，发现控制台报错
 
-![](E:\note\前端\笔记\vue\虚拟dom\报错.jpg)
+![](./虚拟dom/报错.jpg)
 
 > 错误解释是`不能在模块外使用IMPORT语句`。
 >
@@ -170,7 +170,7 @@ export {
 
 根据下图创建对应的节点关系
 
-![](E:\note\前端\笔记\vue\虚拟dom\初.jpg)
+![](./虚拟dom/初.jpg)
 
 ```js
 import { createElement } from './virtualDom.js';
@@ -194,7 +194,7 @@ console.log(vDom);
 
 此时我们可以在控制台看到已经生成的虚拟DOM。
 
-![](E:\note\前端\笔记\vue\虚拟dom\打印结果.jpg)
+![](./虚拟dom/打印结果.jpg)
 
 
 
@@ -292,7 +292,7 @@ const rDom = render(vDom);
 console.log(rDom);
 ```
 
-![](E:\note\前端\笔记\vue\虚拟dom\真实的DOM.jpg)
+![](./虚拟dom/真实的DOM.jpg)
 
 
 
@@ -326,7 +326,7 @@ renderDOM(
 
 此时，我们已成功将DOM渲染到页面上了。
 
-![](E:\note\前端\笔记\vue\虚拟dom\页面.jpg)
+![](./虚拟dom/页面.jpg)
 
 
 
@@ -334,7 +334,7 @@ renderDOM(
 
 根据新旧DOM创建虚拟节点
 
-![](E:\note\前端\笔记\vue\虚拟dom\对比.jpg)
+![](./虚拟dom/对比.jpg)
 
 两个DOM
 
@@ -368,7 +368,7 @@ const vDom2 = createElement('ul', { class: 'list-wrap', style: 'width: 300px;hei
 
 补丁，是一个对象。对象的每一项的键是对应的dom节点的标号。而值是一个数组，数组的每一项是一个对象，对象里面包括了这个dom节点发生的变化类型和一些标注，比如移除某一项，那么就要记录移除的标号`index:6`。
 
-![](E:\note\前端\笔记\vue\虚拟dom\pacth.jpg)
+![](./虚拟dom/pacth.jpg)
 
 
 
@@ -499,7 +499,7 @@ function childrenWalk(oldChildren,newChildren) {
 
 
 控制台输出的补丁包：
-![](E:\note\前端\笔记\vue\虚拟dom\补丁包.jpg)
+![](./虚拟dom/补丁包.jpg)
 
 
 
@@ -582,9 +582,9 @@ function patchAction(rNode, rnPatch) {
 
 前后页面对比
 
-![](E:\note\前端\笔记\vue\虚拟dom\页面.jpg)
+![](./虚拟dom/页面.jpg)
 
-![](E:\note\前端\笔记\vue\虚拟dom\页面2.jpg)
+![](./虚拟dom/页面2.jpg)
 
 ## 相关面试题
 
@@ -667,15 +667,15 @@ key 是为 Vue 中 vnode 的唯一标记，通过这个 key，我们的 diff 操
 </script>
 ```
 
-![](E:\note\前端\笔记\vue\虚拟dom\key做index\初始化.jpg)
+![](./虚拟dom/key做index/初始化.jpg)
 
 当我们`用index作为key`，并且添加一个老刘（`将老刘添加在列表的最前面`）后，
 
-![](E:\note\前端\笔记\vue\虚拟dom\key做index\出错.jpg)
+![](./虚拟dom/key做index/出错.jpg)
 
 ##### 当用index作为key时，
 
-![](E:\note\前端\笔记\vue\虚拟dom\key做index\index为key.jpg)
+![](./虚拟dom/key做index/index为key.jpg)
 
 当对比`key=0`的节点时，在每一个节点里分别有两个节点`张三-18`和`input输入框`。
 
@@ -687,4 +687,4 @@ key 是为 Vue 中 vnode 的唯一标记，通过这个 key，我们的 diff 操
 
 ##### 当用id作为key时，
 
-![](E:\note\前端\笔记\vue\虚拟dom\key做index\id作为key.jpg)
+![](./虚拟dom/key做index/id作为key.jpg)

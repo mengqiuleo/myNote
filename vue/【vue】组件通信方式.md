@@ -221,7 +221,7 @@ export default {
 
 ### 3.Vuex
 
-![](E:\note\前端\笔记\vue\vue组间通讯\vuex.png)
+![](./vue组间通讯/vuex.png)
 
 Vuex实现了一个单向数据流，在全局拥有一个State存放数据，当组件要更改State中的数据时，必须通过Mutation进行，Mutation同时提供了订阅者模式供外部插件调用获取State数据的更新。而当所有异步操作(常见于调用后端接口异步获取更新数据)或批量的同步操作需要走Action，但Action也是无法直接修改State的，还是需要通过Mutation来修改State的数据。最后，根据State的变化，渲染到视图上。
 

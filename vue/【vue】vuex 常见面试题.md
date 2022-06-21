@@ -6,7 +6,7 @@
 
 ## 一、vuex简介
 
-![](E:\note\前端\笔记\vue\vue组间通讯\vuex.png)
+![](./vue组间通讯/vuex.png)
 
 ### 对vuex的理解
 

@@ -4,7 +4,7 @@
 
 MVC 全名是 Model View Controller，是模型(model)－视图(view)－控制器(controller)的缩写。
 
-![](E:\note\前端\笔记\vue\mvvm\mvc.jpg)
+![](./mvvm/mvc1.jpg)
 
 - Model（模型）：是程序需要操作的数据或信息。通常模型对象负责在数据库中存取数据
 - View（视图）：是提供给用户的操作界面，是程序的外壳
@@ -28,7 +28,7 @@ MVVM 新增了 VM 类
 - 一是将【模型】转化成【视图】，即将后端传递的数据转化成所看到的页面。实现的方式是：数据绑定。
 - 二是将【视图】转化成【模型】，即将所看到的页面转化成后端的数据。实现的方式是：DOM 事件监听。
 
-![](E:\note\前端\笔记\vue\mvvm\mvvm.jpg)
+![](./mvvm/mvvm.jpg)
 
 > 把Model和View关联起来的就是ViewModel。
 >

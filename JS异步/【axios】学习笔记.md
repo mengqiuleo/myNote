@@ -229,7 +229,7 @@
 
 ## 三、原理图
 
-![](E:\note\前端\笔记\ajax、promise\axios图片\Axios系统学习笔记原理图.png)
+![](./axios图片/Axios系统学习笔记原理图.png)
 
 
 
@@ -344,7 +344,7 @@
 
 控制台输出结果：
 
-![](E:\note\前端\笔记\ajax、promise\axios图片\拦截器结果.jpg)
+![](./axios图片/拦截器结果.jpg)
 
 
 
@@ -410,7 +410,7 @@
 
 控制台输出结果：
 
-![](E:\note\前端\笔记\ajax、promise\axios图片\结果2.jpg)
+![](./axios图片/结果2.jpg)
 
 > 请求拦截器是后进先执行，响应拦截器是先进先执行
 

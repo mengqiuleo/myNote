@@ -53,11 +53,11 @@ window.addEventListener("hashchange", funcRef, false);
 
 #### 第一种：手动在导航栏中修改
 
-![](E:\note\前端\笔记\vue\路由模式\导航栏.jpg)
+![](./路由模式/导航栏.jpg)
 
 ​	控制台的输出
 
-![](E:\note\前端\笔记\vue\路由模式\1.jpg)
+![](./路由模式/1.jpg)
 
 
 
@@ -65,7 +65,7 @@ window.addEventListener("hashchange", funcRef, false);
 
 这里是点击了后退按钮，从 `#/user` 后退到了 `#/`
 
-![](E:\note\前端\笔记\vue\路由模式\2.jpg)
+![](./路由模式/2.jpg)
 
 
 
@@ -97,7 +97,7 @@ window.addEventListener("hashchange", funcRef, false);
 
 然后点击按钮
 
-![](E:\note\前端\笔记\vue\路由模式\3.jpg)
+![](./路由模式/3.jpg)
 
 > 注：
 >
@@ -123,7 +123,7 @@ location.hash // '#/aaa/bbb'
 
 对于href属性
 
-![](E:\note\前端\笔记\vue\路由模式\href.jpg)
+![](./路由模式/href.jpg)
 
 
 
@@ -180,7 +180,7 @@ history 模式，每访问一个页面都要发起网络请求，每个请求都
 
 当点击了按钮之后，路由变成了`http://127.0.0.1:5500/user`。
 
-![](E:\note\前端\笔记\vue\路由模式\history.jpg)
+![](./路由模式/history.jpg)
 
 
 

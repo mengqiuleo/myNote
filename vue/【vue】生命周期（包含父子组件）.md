@@ -6,7 +6,7 @@
 
 ## 一、vue生命周期方法
 
-![](E:\note\前端\笔记\vue\vue生命周期\生命周期.png)
+![](./vue生命周期/生命周期.png)
 
 生命周期就是 vue 从开始创建到销毁的过程，分为四大步（创建，挂载， 更新，销毁），每一步又分为两小步，比如：beforCreate和created,beforeMount和mounted,beforeUpdate和updated,beforeDestroy和destroyed。
 
@@ -18,7 +18,7 @@
 
 
 
-![](E:\note\前端\笔记\vue\vue生命周期\生命周期2.jpg)
+![](./vue生命周期/生命周期2.jpg)
 
 
 

@@ -4,7 +4,7 @@
 
 
 
-![](E:\note\前端\笔记\vue\vuex\vuex.png)
+![](./vuex/vuex.png)
 
 ## (一)简单案例
 
@@ -14,7 +14,7 @@
 
 - 在index.js文件中写入如下代码：
 
-  ![](E:\note\前端\笔记\vue\vuex\案例1.png)
+  ![](./vuex/案例1.png)
 
   
 
@@ -24,7 +24,7 @@
 
   - 这样，在其他Vue组件中，我们就可以通过this.$store的方式，获取到这个store对象了
 
-![](E:\note\前端\笔记\vue\vuex\案例2.png)
+![](./vuex/案例2.png)
 
 3.使用
 
@@ -34,7 +34,7 @@
 
 - 通过this.$store.commit('mutation中方法')来修改状态
 
-![](E:\note\前端\笔记\vue\vuex\案例3.png)
+![](./vuex/案例3.png)
 
 
 
@@ -50,17 +50,17 @@ Vuex有几个比较核心的概念: State，Getters，Mutation，Action，Module
 
 ​	获取学生年龄大于20的个数。
 
-![](E:\note\前端\笔记\vue\vuex\getters.png)
+![](./vuex/getters.png)
 
 
 
 - 可以用computed计算属性，但是这样的话，代码不好复用，其他组件使用不方便 
 
-​		![](E:\note\前端\笔记\vue\vuex\getters1.png)
+​		![](./vuex/getters1.png)
 
 - 我们可以在Store中定义getters
 
-  ![](E:\note\前端\笔记\vue\vuex\getters2.png)
+  ![](./vuex/getters2.png)
 
 
 
@@ -68,7 +68,7 @@ Vuex有几个比较核心的概念: State，Getters，Mutation，Action，Module
 
 ​	如果我们已经有了一个获取所有年龄大于20岁学生列表的getters, **并且我们想获取该列表的长度，**那么代码可以这样来写
 
-![](E:\note\前端\笔记\vue\vuex\getters3.png)
+![](./vuex/getters3.png)
 
 getters里面的方法 也会有state参数。
 
@@ -80,7 +80,7 @@ getters 也可以接受其他 getters 作为第二个参数。
 
    比如上面的案例中,我们希望根据ID获取用户的信息
 
-![](E:\note\前端\笔记\vue\vuex\getters4.png)
+![](./vuex/getters4.png)
 
 
 
@@ -119,7 +119,7 @@ mutations: {
 
 - 通过mutation更新 
 
-![](E:\note\前端\笔记\vue\vuex\mutation.png)
+![](./vuex/mutation.png)
 
 
 
@@ -129,9 +129,9 @@ mutations: {
 
 ​	参数被称为是mutation的载荷(Payload)
 
-![](E:\note\前端\笔记\vue\vuex\参数1.png)
+![](./vuex/参数1.png)
 
-![](E:\note\前端\笔记\vue\vuex\参数2.png)
+![](./vuex/参数2.png)
 
 但是如果参数不是一个呢?
 
@@ -141,9 +141,9 @@ mutations: {
 
 - 这个时候可以再从对象中取出相关的信息.
 
-![](E:\note\前端\笔记\vue\vuex\参数3.png)
+![](./vuex/参数3.png)
 
-![](E:\note\前端\笔记\vue\vuex\参数4.png)
+<img src="./vuex/参数4.png" style="zoom:100%;" />
 
 整体代码
 
@@ -171,11 +171,11 @@ mutations: {
 
 Vue还提供了另外一种风格, 它是一个**包含type属性的对象**,(下面是vue代码)
 
-![](E:\note\前端\笔记\vue\vuex\提交风格.png)
+![](./vuex/提交风格.png)
 
 Mutation中的处理方式是将整个commit的对象作为payload使用, 所以代码没有改变, 依然如下:（下面是mutation代码）
 
-![](E:\note\前端\笔记\vue\vuex\提交风格1.png)
+![](./vuex/提交风格1.png)
 
 
 
@@ -185,7 +185,7 @@ Mutation中的处理方式是将整个commit的对象作为payload使用, 所以
   - 但是某些情况, 我们确实希望在Vuex中进行一些异步操作, 比如网络请求, 必然是异步的.这个时候怎么处理呢?
   - Action类似于Mutation, 但是是用来代替Mutation进行异步操作的.
 
-<img src="E:\note\前端\笔记\vue\vuex\action.png" style="zoom:67%;" />
+<img src="./vuex/action.png" style="zoom:67%;" />
 
 context是什么?
 
@@ -197,7 +197,7 @@ context是什么?
 
 在Vue组件中, 如果我们调用action中的方法, 那么就需要使用dispatch
 
-<img src="E:\note\前端\笔记\vue\vuex\action1.png" style="zoom:67%;" />
+<img src="./vuex/action1.png" style="zoom:67%;" />
 
 
 
@@ -209,7 +209,7 @@ Module是模块的意思, 为什么在Vuex中我们要使用模块呢?
 - 当应用变得非常复杂时,store对象就有可能变得相当臃肿.
 - 为了解决这个问题, Vuex允许我们将store分割成模块(Module), 而每个模块拥有自己的state、mutations、actions、getters等
 
-<img src="E:\note\前端\笔记\vue\vuex\module.png" style="zoom:75%;" />
+<img src="./vuex/module.png" style="zoom:75%;" />
 
 上面的代码中, 我们已经有了整体的组织结构, 下面我们来看看具体的局部模块中的代码如何书写.
 
@@ -217,9 +217,9 @@ Module是模块的意思, 为什么在Vuex中我们要使用模块呢?
 
 - mutation和getters接收的第一个参数是局部状态对象
 
-![](E:\note\前端\笔记\vue\vuex\module1.png)
+![](./vuex/module1.png)
 
-![](E:\note\前端\笔记\vue\vuex\module2.png)
+![](./vuex/module2.png)
 
 注意:
 
@@ -235,8 +235,8 @@ Module是模块的意思, 为什么在Vuex中我们要使用模块呢?
 
 - 局部状态通过 context.state 暴露出来，根节点状态则为 context.rootState
 
-![](E:\note\前端\笔记\vue\vuex\module3.png)
+![](./vuex/module3.png)
 
 - 如果getters中也需要使用全局的状态, 可以接受更多的参数
 
-![](E:\note\前端\笔记\vue\vuex\module4.png)
+![](./vuex/module4.png)

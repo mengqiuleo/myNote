@@ -196,7 +196,7 @@ module.exports.pitch = function (remainingRequest, precedingRequest, data) {
 
 webpack 会先从左到右执行 loader 链中的每个 loader 上的 pitch 方法（如果有），然后再从右到左执行 loader 链中的每个 loader 上的普通 loader 方法。
 
-![](E:\note\前端\笔记\webpack\原理篇\1.jpg)
+![](./原理篇/1.jpg)
 
 此时的执行顺序为：
 
@@ -206,7 +206,7 @@ pitch1 --> pitch2 --> pitch3 --> loader3 --> loader2 --> loader1
 
 在这个过程中如果任何 pitch 有返回值，则 loader 链被阻断。webpack 会跳过后面所有的的 pitch 和 loader，直接进入上一个 loader 。
 
-![](E:\note\前端\笔记\webpack\原理篇\2.jpg)
+![](./原理篇/2.jpg)
 
 
 
@@ -386,7 +386,7 @@ compilation 对象代表一次资源的构建，compilation 实例能够访问�
 
 ### 生命周期简图
 
-![](E:\note\前端\笔记\webpack\原理篇\plugin.jpg)
+![](./原理篇/plugin.jpg)
 
 
 

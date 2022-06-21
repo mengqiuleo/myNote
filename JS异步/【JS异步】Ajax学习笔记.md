@@ -73,7 +73,7 @@
 
 `XMLHttpRequest`对象的常用属性
 
-![](E:\note\前端\笔记\ajax、promise\ajax图片\ajax.png)
+![](./ajax图片/ajax.png)
 
 
 

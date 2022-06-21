@@ -211,7 +211,7 @@ slot的用法可以分为三类，分别是**默认插槽、具名插槽和作�
 
 
 效果：
-![](E:\note\前端\笔记\vue\vue常见面试题\作用域插槽.jpg)
+![](./vue常见面试题/作用域插槽.jpg)
 
 可以看到，内容是由子组件决定，样式由父组件决定。
 
@@ -260,7 +260,7 @@ nextTick 的核心是利用了如 Promise 、MutationObserver、setImmediate、s
 
 ####  审查元素时发现data-v-xxxxx，这是啥？
 
-![](E:\note\前端\笔记\vue\vue常见面试题\scoped.jpg)
+![](./vue常见面试题/scoped.jpg)
 
 > 这是在标记vue文件中css时使用scoped标记产生的，因为要保证各文件中的css不相互影响，给每个component都做了唯一的标记，所以每引入一个component就会出现一个新的'data-v-xxx'标记
 
