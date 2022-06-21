@@ -36,7 +36,7 @@ JS引擎遇到一个异步事件后并不会一直等待其返回结果，而是
 
 被放入事件队列不会立刻执行其回调，而是`等待当前执行栈中的所有任务都执行完毕， 主线程处于闲置状态时，主线程会去查找事件队列是否有任务`。如果有，那么主线程会从中取出排在第一位的事件，并把这个事件对应的回调放入执行栈中，然后执行其中的同步代码...，如此反复，`这样就形成了一个无限的循环。这就是这个过程被称为“事件循环（Event Loop）”的原因。`
 
-<img src="E:\note\前端\笔记\js\事件\事件轮询.png" style="zoom:67%;" />
+<img src="./事件/事件轮询.png" style="zoom:67%;" />
 
 图中的stack表示我们所说的执行栈，web apis则是代表一些异步事件，而callback queue即事件队列。
 
@@ -131,7 +131,7 @@ console.log('同步代码') //同步代码立即执行
 - 我们会发现libuv中主要维护了一个EventLoop和worker threads（线程池）；
 - EventLoop负责调用系统的一些其他操作：文件的IO、Network、child-processes等
 
-![](E:\note\前端\笔记\浏览器\event Loop 图片\node.jpg)
+![](./event Loop 图片/node.jpg)
 
 事件循环像是一个桥梁，是连接着应用程序的JavaScript和系统调用之间的通道：
 

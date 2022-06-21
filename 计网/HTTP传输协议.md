@@ -9,7 +9,7 @@
 - 是超文本传输协议（HTTP）是一种通信协议，它允许将超文本标记语言（HTML）文档从Web服务器传送到客户端的浏览器
 - HTTP是一个属于应用层的面向对象的协议
 
-<img src="E:\note\408\HTTP图片\发展历程.jpg" style="zoom:67%;" />
+<img src="./HTTP图片/发展历程.jpg" style="zoom:67%;" />
 
 
 
@@ -28,7 +28,7 @@ TCP/IP协议族是由一个四层协议组成的系统，
 
 这四层分别为：应用层、传输层、网络层和数据链路层
 
-<img src="E:\note\408\HTTP图片\五层.jpg" style="zoom:50%;" />
+<img src="./HTTP图片/五层.jpg" style="zoom:50%;" />
 
 **应用层**
 
@@ -52,7 +52,7 @@ TCP/IP协议族是由一个四层协议组成的系统，
 
 ### 数据包的封装过程
 
-<img src="E:\note\408\HTTP图片\数据包.jpg" style="zoom: 67%;" />
+<img src="./HTTP图片/数据包.jpg" style="zoom: 67%;" />
 
 
 
@@ -60,13 +60,13 @@ TCP/IP协议族是由一个四层协议组成的系统，
 
 发送端发送数据时，数据会从上层传输到下层，且每次过一层都会被打上该层的头部信息。而接收端接收数据时，数据会从下层传输到上层，传输层会把下层的头部信息删除。
 
-<img src="E:\note\408\HTTP图片\传输.jpg" style="zoom:67%;" />
+<img src="./HTTP图片/传输.jpg" style="zoom:67%;" />
 
 
 
 ### TCP三次握手
 
-<img src="E:\note\408\HTTP图片\三次握手.jpg" style="zoom:67%;" />
+<img src="./HTTP图片/三次握手.jpg" style="zoom:67%;" />
 
  **第一次握手**
 
@@ -114,7 +114,7 @@ TCP/IP协议族是由一个四层协议组成的系统，
 
 客户/服务器模式工作的方式是由客户端向服务器发出请求，服务器端响应请求，并进行相应服务。
 
-<img src="E:\note\408\HTTP图片\1.jpg" style="zoom:67%;" />
+<img src="./HTTP图片/1.jpg" style="zoom:67%;" />
 
 #### ②简单快速
 
@@ -143,7 +143,7 @@ TCP/IP协议族是由一个四层协议组成的系统，
 
 ### Ⅱ HTTP报文结构分析-请求报文
 
-![](E:\note\408\HTTP图片\请求.jpg)
+![](./HTTP图片/请求.jpg)
 
 
 
@@ -159,25 +159,25 @@ TCP/IP协议族是由一个四层协议组成的系统，
 
 这些字段可以用在请求报文上，也可以用在响应报文上。
 
-<img src="E:\note\408\HTTP图片\通用.jpg" style="zoom:80%;" />
+<img src="./HTTP图片/通用.jpg" style="zoom:80%;" />
 
 ##### ②请求报文头
 
-<img src="E:\note\408\HTTP图片\请求报文头.jpg" style="zoom:80%;" />
+<img src="./HTTP图片/请求报文头.jpg" style="zoom:80%;" />
 
 ##### ③响应报文头
 
-<img src="E:\note\408\HTTP图片\响应报文头.jpg" style="zoom:80%;" />
+<img src="./HTTP图片/响应报文头.jpg" style="zoom:80%;" />
 
 ##### ④实体报文头
 
-<img src="E:\note\408\HTTP图片\实体报文头.jpg" style="zoom:80%;" />
+<img src="./HTTP图片/实体报文头.jpg" style="zoom:80%;" />
 
 
 
 ### Ⅲ HTTP报文结构分析-响应报文
 
-<img src="E:\note\408\HTTP图片\响应.jpg" style="zoom:80%;" />
+<img src="./HTTP图片/响应.jpg" style="zoom:80%;" />
 
 
 
@@ -201,7 +201,7 @@ GET方法用来请求访问已被URI识别的资源
 
 指定的资源经服务器端解析后返回响应内容
 
-![](E:\note\408\HTTP图片\GET.jpg)
+![](./HTTP图片/GET.jpg)
 
 
 
@@ -214,7 +214,7 @@ GET方法用来请求访问已被URI识别的资源
 - POST方法与GET功能类似，一般用来传输实体的主体
 - POST方法的主要目的不是获取响应主体的内容
 
-![](E:\note\408\HTTP图片\POST.jpg)
+![](./HTTP图片/POST.jpg)
 
 POST的提交的数据量大，且可以保密
 
@@ -248,7 +248,7 @@ POST的提交的数据量大，且可以保密
 
 用来查询针对请求URI指定的资源支持的方法
 
-![](E:\note\408\HTTP图片\OPTIONS.jpg)
+![](./HTTP图片/OPTIONS.jpg)
 
 当客户端不知道对方支持什么样的方法，此时就可以用OPTIONS方法 
 
@@ -270,27 +270,27 @@ CONNECT：
 
 是用以表示网页服务器超文本传输协议响应状态的3位数字代码
 
-<img src="E:\note\408\HTTP图片\状态码.jpg" style="zoom:80%;" />
+<img src="./HTTP图片/状态码.jpg" style="zoom:80%;" />
 
 
 
 #### 常用HTTP状态码
 
-![](E:\note\408\HTTP图片\2xx.jpg)
+![](./HTTP图片/2xx.jpg)
 
 
 
-![](E:\note\408\HTTP图片\3xx.jpg)
+![](./HTTP图片/3xx.jpg)
 
 浏览器会自动跳转到指定的链接上
 
 
 
-![](E:\note\408\HTTP图片\4xx.jpg)
+![](./HTTP图片/4xx.jpg)
 
 
 
-![](E:\note\408\HTTP图片\5xx.jpg)
+![](./HTTP图片/5xx.jpg)
 
 
 
@@ -305,11 +305,11 @@ Cookie是在客户端的，Session是在服务端的
 
 
 
-<img src="E:\note\408\HTTP图片\cookie.jpg" style="zoom:67%;" />
+<img src="./HTTP图片/cookie.jpg" style="zoom:67%;" />
 
 
 
-![](E:\note\408\HTTP图片\cookie2.jpg)
+![](./HTTP图片/cookie2.jpg)
 
 
 
@@ -319,7 +319,7 @@ Session是另一种记录客户状态的机制，保存在服务器上。客户�
 
 客户端浏览器再次访问时只需要从该Session中查找该客户的状态就可以了
 
-![](E:\note\408\HTTP图片\session.jpg)
+![](./HTTP图片/session.jpg)
 
 解释上图：
 
@@ -335,7 +335,7 @@ Session是另一种记录客户状态的机制，保存在服务器上。客户�
 
   就是直接把SessionID附加在URL的后面
 
-  ![](E:\note\408\HTTP图片\URL重写.jpg)
+  ![](./HTTP图片/URL重写.jpg)
 
 - 隐藏表单
 
@@ -377,7 +377,7 @@ Session是另一种记录客户状态的机制，保存在服务器上。客户�
 
 ### BASIC认证
 
-<img src="E:\note\408\HTTP图片\basic.jpg" style="zoom:67%;" />
+<img src="./HTTP图片/basic.jpg" style="zoom:67%;" />
 
 BASIC认证没有加密处理，如果在传输过程值被窃听，数据将会泄漏。
 
@@ -393,7 +393,7 @@ DIGEST认证同样使用质询/响应的方式，但不会像BASIC认证那样�
 
 因为发送给对方的只是响应摘要以及由质询码产生的响应结果，所以比BASIC认证多了一层保护。密码泄漏的可能性降低。
 
-<img src="E:\note\408\HTTP图片\DEDIR.jpg" style="zoom:80%;" />
+<img src="./HTTP图片/DEDIR.jpg" style="zoom:80%;" />
 
 DIGEST认证无法识别用户身份，只要用户名和密码输入正确即可。
 
@@ -425,17 +425,17 @@ SSL客户端认证是借由HTTPS的客户端证书完成认证的方式。凭借
 - HTTP/1.0中，默认使用的是短连接。也就是说，浏览器和服务器每进行一次HTTP操作，就建立一次连接，结束就中断
 - HTTP/1.1起，默认使用长连接，用以保持连接特性
 
-![](E:\note\408\HTTP图片\长连接.jpg)
+![](./HTTP图片/长连接.jpg)
 
 
 
-<img src="E:\note\408\HTTP图片\长-短.jpg" style="zoom:67%;" />
+<img src="./HTTP图片/长-短.jpg" style="zoom:67%;" />
 
 
 
 ## 五、HTTP中介之代理
 
-<img src="E:\note\408\HTTP图片\代理.jpg" style="zoom:80%;" />
+<img src="./HTTP图片/代理.jpg" style="zoom:80%;" />
 
 
 
@@ -453,11 +453,11 @@ SSL客户端认证是借由HTTPS的客户端证书完成认证的方式。凭借
 - 网关可以作为某种翻译器使用，它抽象出了一种能够到达资源的地方。网关是资源和应用程序之间的粘合剂
 - 网关扮演的是"协议转换器"的角色
 
-<img src="E:\note\408\HTTP图片\网关.jpg" style="zoom:80%;" />
+<img src="./HTTP图片/网关.jpg" style="zoom:80%;" />
 
 <img src="E:\note\408\HTTP图片\网关2.jpg" style="zoom:67%;" />
 
-<img src="E:\note\408\HTTP图片\网关类型.jpg" style="zoom:50%;" />
+<img src="./HTTP图片/网关类型.jpg" style="zoom:50%;" />
 
 
 
@@ -469,7 +469,7 @@ SSL客户端认证是借由HTTPS的客户端证书完成认证的方式。凭借
 
 **Cache-Control**
 
-![](E:\note\408\HTTP图片\缓存.jpg)
+![](./HTTP图片/缓存.jpg)
 
 
 
@@ -507,13 +507,13 @@ SSL客户端认证是借由HTTPS的客户端证书完成认证的方式。凭借
 
 #### 场景一：Expires
 
-![](E:\note\408\HTTP图片\expires.jpg)
+![](./HTTP图片/expires.jpg)
 
 
 
 #### 场景二：If-Modified-Since && Last-Modified
 
-![](E:\note\408\HTTP图片\最新修改时间.jpg)
+![](./HTTP图片/最新修改时间.jpg)
 
 ![](E:\note\408\HTTP图片\最新修改时间2.jpg)
 
@@ -521,7 +521,7 @@ SSL客户端认证是借由HTTPS的客户端证书完成认证的方式。凭借
 
 #### 场景三：Etag && If-None-Match
 
-![](E:\note\408\HTTP图片\Etag.jpg)
+![](./HTTP图片/Etag.jpg)
 
 ![](E:\note\408\HTTP图片\Etag2.jpg)
 
@@ -535,7 +535,7 @@ SSL客户端认证是借由HTTPS的客户端证书完成认证的方式。凭借
 
 ### ④ 浏览器操作对HTTP缓存的影响
 
-![](E:\note\408\HTTP图片\浏览器操作.jpg)
+![](./HTTP图片/浏览器操作.jpg)
 
 
 
@@ -545,7 +545,7 @@ SSL客户端认证是借由HTTPS的客户端证书完成认证的方式。凭借
 
 指客户端和服务器端就响应的资源内容进行交涉，然后提供给客户端最为合适的资源。内容协商会以响应资源的语言，字符集，编码方式等作为判断的基准。
 
-<img src="E:\note\408\HTTP图片\内容协商.jpg" style="zoom:67%;" />
+<img src="./HTTP图片/内容协商.jpg" style="zoom:67%;" />
 
 
 
@@ -608,7 +608,7 @@ TLS是传输层加密协议，它的前身是SSL协议
 - 它处在安全防御的最前沿，如果被用户轻易突破，通常应用程序的全部功能、数据都会被其控制。
 - 缺乏安全有效的验证机制，其他核心安全机制都无法实施（会话管理和访问控制）
 
-<img src="E:\note\408\HTTP图片\身份验证.jpg" style="zoom:80%;" />
+<img src="./HTTP图片/身份验证.jpg" style="zoom:80%;" />
 
 
 
