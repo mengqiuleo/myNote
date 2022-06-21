@@ -43,7 +43,7 @@ Object.defineProperty(obj, prop, descriptor)
 - 数据属性（Data Properties）描述符（Descriptor）；
 - 存取属性（Accessor访问器Properties）描述符（Descriptor）；
 
-![](E:\note\前端\笔记\js\对象\属性描述符.jpg)
+![](./对象/属性描述符.jpg)
 
 
 

@@ -43,7 +43,7 @@ DOM就是由节点组成的。
 
 **DOM树**：（一切都是节点）
 
-![](E:\note\前端\笔记\js\dom&&bom\dom树.png)
+![](./dom&&bom/dom树.png)
 
 上图可知，**在HTML当中，一切都是节点**（非常重要）。
 
@@ -475,7 +475,7 @@ querySelector使用CSS选择器获取一个元素，下面是根据属性获取�
 
 
 
-<img src="E:\note\前端\笔记\js\dom&&bom\动态特性1.png" style="zoom:75%;" />
+<img src="./dom&&bom/动态特性1.png" style="zoom:75%;" />
 
 <img src="E:\note\前端\笔记\js\dom&&bom\动态特性2.png" style="zoom:67%;" />
 
@@ -497,7 +497,7 @@ querySelector使用CSS选择器获取一个元素，下面是根据属性获取�
 </script> 
 ```
 
-![](E:\note\前端\笔记\js\dom&&bom\动态特性1.2.png)
+![](./dom&&bom/动态特性1.2.png)
 
 
 
@@ -521,7 +521,7 @@ document.querySelectorAll获取的集合是静态的
 </script>
 ```
 
-<img src="E:\note\前端\笔记\js\dom&&bom\节点静态更改.png" style="zoom:67%;" />
+<img src="./dom&&bom/节点静态更改.png" style="zoom:67%;" />
 
 
 
@@ -644,7 +644,7 @@ nodeName指定节点的名称
 </script>
 ```
 
-![](E:\note\前端\笔记\js\dom&&bom\节点属性.png)
+![](./dom&&bom/节点属性.png)
 
 
 
@@ -683,7 +683,7 @@ nodeName可以获取不限于元素的节点名，tagName仅能用于获取标�
 </script>
 ```
 
-![](E:\note\前端\笔记\js\dom&&bom\节点属性2.png)
+![](./dom&&bom/节点属性2.png)
 
 
 
@@ -724,7 +724,7 @@ nodeName可以获取不限于元素的节点名，tagName仅能用于获取标�
 </script>
 ```
 
-![](E:\note\前端\笔记\js\dom&&bom\节点属性3.png)
+![](./dom&&bom/节点属性3.png)
 
 
 
@@ -763,7 +763,7 @@ nodeName可以获取不限于元素的节点名，tagName仅能用于获取标�
 document.querySelectorAll('div')
 ```
 
-<img src="E:\note\前端\笔记\js\dom&&bom\nodelist.png" style="zoom:80%;" />
+<img src="./dom&&bom/nodelist.png" style="zoom:80%;" />
 
 返回的NodeList中包含这三个div。展开NodeList的`__proto__`属性后发现，NodeList继承于一个NodeList对象，而这个NodeList对象又继承于Object对象。
 
@@ -783,7 +783,7 @@ for(var item of divs.entries()){
 
 返回类型为数组
 
-![](E:\note\前端\笔记\js\dom&&bom\nodelist1.png)
+![](./dom&&bom/nodelist1.png)
 
 
 
@@ -820,7 +820,7 @@ for (var key of list.keys()) {
 }
 ```
 
-![](E:\note\前端\笔记\js\dom&&bom\nodelistkey.png)
+![](./dom&&bom/nodelistkey.png)
 
 
 
@@ -836,7 +836,7 @@ for (var value of divs.values()) {
 }
 ```
 
-![](E:\note\前端\笔记\js\dom&&bom\nodelistvalue.png)
+![](./dom&&bom/nodelistvalue.png)
 
 
 
@@ -848,7 +848,7 @@ for (var value of divs.values()) {
 document.getElementsByTagName('div')
 ```
 
-![](E:\note\前端\笔记\js\dom&&bom\htmlcollection.png)
+![](./dom&&bom/htmlcollection.png)
 
 HTMLCollection继承于一个HTMLCollection对象，而HTMLCollection又直接继承于Object对象，所以它和NodeList是平级的。
 
@@ -920,7 +920,7 @@ HTMLCollection具有namedItem方法可以按name或id属性来获取元素
 
 ```
 
-![](E:\note\前端\笔记\js\dom&&bom\二者对比.png)
+![](./dom&&bom/二者对比.png)
 
 `test.childNodes`是`NodeList`类型的，而`test.children`则是`HTMLCollection`类型的。
 
@@ -1257,7 +1257,7 @@ html标签的父节点是document，但父标签节点不存在
 </script>
 ```
 
-![](E:\note\前端\笔记\js\dom&&bom\自定义属性.png)
+![](./dom&&bom/自定义属性.png)
 
 属性值都为字符串，所以数值类型需要进行转换
 

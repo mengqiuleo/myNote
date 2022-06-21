@@ -82,7 +82,7 @@ JavaScript 引擎在执行 JavaScript 代码时，也会从上到下进行词法
 
 ### 确定 this 的指向
 
-![](E:\note\前端\笔记\js\拉钩教育\this指向.jpg)
+![](./拉钩教育/this指向.jpg)
 
 - 在全局环境中，this指向全局对象（在浏览器中为window）
 

@@ -132,9 +132,9 @@ window对象在浏览器中有两个身份：
 
 - go()  ，可以用来跳转到指定的页面   它需要一个整数作为参数 
   	1:表示向前跳转一个页面 相当于forward() 
-  	2:表示向前跳转两个页面 
-  	-1:表示向后跳转一个页面 
-  	-2:表示向后跳转两个页面  
+    	2:表示向前跳转两个页面 
+    	-1:表示向后跳转一个页面 
+    	-2:表示向后跳转两个页面  
 
 - pushState() : 打开一个指定的地址
 
@@ -142,7 +142,7 @@ window对象在浏览器中有两个身份：
 
 
 
-<img src="E:\note\前端\笔记\js\dom&&bom\BOM——history.jpg" style="zoom:67%;" />
+<img src="./dom&&bom/BOM——history.jpg" style="zoom:67%;" />
 
 ## 四、Location  
 
@@ -222,16 +222,16 @@ locationBtn.onclick = function() {
 
 #### window常见的属性
 
-<img src="E:\note\前端\笔记\js\dom&&bom\属性.jpg" style="zoom:67%;" />
+<img src="./dom&&bom/属性.jpg" style="zoom:67%;" />
 
 
 
 #### window常见的方法
 
-<img src="E:\note\前端\笔记\js\dom&&bom\方法.jpg" style="zoom:67%;" />
+<img src="./dom&&bom/方法.jpg" style="zoom:67%;" />
 
 
 
 #### window常见的事件
 
-<img src="E:\note\前端\笔记\js\dom&&bom\事件.jpg" style="zoom:67%;" />
+<img src="./dom&&bom/事件.jpg" style="zoom:67%;" />

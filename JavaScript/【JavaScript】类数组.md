@@ -6,7 +6,7 @@
 
 > 类数组对象，就是指可以**通过索引属性访问元素**并且**拥有 length** 属性的对象。
 
-![](E:\note\前端\笔记\js\拉钩教育\异同点.jpg)
+![](./拉钩教育/异同点.jpg)
 
 
 
@@ -221,7 +221,7 @@ console.log(Object.prototype.toString.call(elem1));
 
 这里打印出来了页面第一个 form 表单元素，同时也打印出来了判断类型的结果，说明打印的判断的类型和 arguments 返回的也比较类似，typeof 返回的都是 'object'，和上面的类似。
 
-![](E:\note\前端\笔记\js\拉钩教育\表单.png)
+![](E:\note\前端\笔记\js\/拉钩教育/表单.png)
 
 
 
@@ -252,8 +252,8 @@ console.log(Object.prototype.toString.call(list));
 
 控制台输出结果：
 
-![](E:\note\前端\笔记\js\拉钩教育\结果2.1.png)
+![](./拉钩教育/结果2.1.png)
 
 
 
-#### 
+

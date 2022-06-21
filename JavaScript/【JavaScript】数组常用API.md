@@ -78,7 +78,7 @@ Array.from(obj, function(value, index){
 
 ```
 
-![](E:\note\前端\笔记\js\拉钩教育\数组结果.png)
+![](./拉钩教育/数组结果.png)
 
 
 
@@ -565,4 +565,4 @@ arr.reduce(function(prev, current, index, array){
 
 ## 总结
 
-![](E:\note\前端\笔记\js\拉钩教育\总结.jpg)
+![](./拉钩教育/总结.jpg)

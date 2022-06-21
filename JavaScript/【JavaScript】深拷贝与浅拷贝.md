@@ -291,7 +291,7 @@ console.log('obj2',obj2);
 ```
 
 控制台输出结果：
-![](E:\note\前端\笔记\js\拉钩教育\结果2.jpg)
+![](./拉钩教育/结果2.jpg)
 
 
 
@@ -648,7 +648,7 @@ console.log('cloneObj', cloneObj)
 
 cloneObj 在 obj 的基础上进行了一次深拷贝，cloneObj 里的 arr 数组进行了修改，并未影响到 obj.arr 的变化。
 
-![](E:\note\前端\笔记\js\拉钩教育\结果3.png)
+![](./拉钩教育/结果3.png)
 
 
 
