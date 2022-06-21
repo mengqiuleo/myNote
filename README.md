@@ -6,6 +6,8 @@
 
 
 
+<br/>
+
 ## 🧐仓库地址
 
 点击这里👉 [https://github.com/mengqiuleo/myNote](https://github.com/mengqiuleo/myNote)
@@ -18,7 +20,7 @@ csdn地址：[小飞侠Pan](https://blog.csdn.net/weixin_52834435?type=blog)
 
 后续文章均会同步到我的个人博客上，欢迎访问！！！
 
-
+<br/>
 
 ## 🤓使用指南
 
@@ -36,7 +38,7 @@ csdn地址：[小飞侠Pan](https://blog.csdn.net/weixin_52834435?type=blog)
 
 ### 💭[心路历程](https://github.com/mengqiuleo/myNote/tree/main/%E5%BF%83%E8%B7%AF%E5%8E%86%E7%A8%8B)                   📄[vuepress博客搭建](https://github.com/mengqiuleo/myNote/tree/main/blog)
 
-
+<br/>
 
 ## 🥳项目经历
 
@@ -45,7 +47,7 @@ csdn地址：[小飞侠Pan](https://blog.csdn.net/weixin_52834435?type=blog)
 | mimall仿小米商城（vue2） | [项目地址](https://github.com/mengqiuleo/mimall) | [项目笔记](https://blog.csdn.net/weixin_52834435/article/details/124681288) |
 |   仿去哪儿app（vue2）    | [项目地址](https://github.com/mengqiuleo/travel) | [项目笔记](https://blog.csdn.net/weixin_52834435/article/details/123059722) |
 
-
+<br/>
 
 ## 📢关于本站
 
@@ -57,7 +59,7 @@ csdn地址：[小飞侠Pan](https://blog.csdn.net/weixin_52834435?type=blog)
 
 转载使用请标明出处，谢谢！
 
-
+<br/>
 
 ## 🕶关于我
 
@@ -71,9 +73,9 @@ csdn地址：[小飞侠Pan](https://blog.csdn.net/weixin_52834435?type=blog)
 
 
 
-#### 简单了解我👇🏻
+##### 简单了解我👇🏻
 
-#### 【程序人生】纵有千古，横有八荒，前途似海，来日方长。
+##### 【程序人生】纵有千古，横有八荒，前途似海，来日方长。
 
-#### 高考之后，一个普通大学生的大一生活，[【年度总结】2021 邂逅前端，入坑算法](https://blog.csdn.net/weixin_52834435/article/details/125145205?spm=1001.2014.3001.5502)
+##### 高考之后，一个普通大学生的大一生活，[【年度总结】2021 邂逅前端，入坑算法](https://blog.csdn.net/weixin_52834435/article/details/125145205?spm=1001.2014.3001.5502)
 
