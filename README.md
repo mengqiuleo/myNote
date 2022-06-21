@@ -24,8 +24,9 @@ csdn地址：[小飞侠Pan](https://blog.csdn.net/weixin_52834435?type=blog)
 
 ## 🤓使用指南
 
-| 🐭[CSS](https://github.com/mengqiuleo/myNote/tree/main/css)   | 🐮[JS](https://github.com/mengqiuleo/myNote/tree/main/JavaScript) |
+|                                                              |                                                              |
 | :----------------------------------------------------------- | ------------------------------------------------------------ |
+| 🐭[CSS](https://github.com/mengqiuleo/myNote/tree/main/css)   | 🐮[JS](https://github.com/mengqiuleo/myNote/tree/main/JavaScript) |
 | 🐯[JS异步](https://github.com/mengqiuleo/myNote/tree/main/JS%E5%BC%82%E6%AD%A5) | 🐰[Vue2](https://github.com/mengqiuleo/myNote/tree/main/vue)  |
 | 🐲[es6](https://github.com/mengqiuleo/myNote/tree/main/es6)   | 🐍[Vue3+TS](https://github.com/mengqiuleo/myNote/tree/main/vue3%2BTS) |
 | 🐎[webpack](https://github.com/mengqiuleo/myNote/tree/main/webpack) | 🐐[计算机网络](https://github.com/mengqiuleo/myNote/tree/main/%E8%AE%A1%E7%BD%91) |
