@@ -31,7 +31,7 @@ flex-wrap 属性规定flex容器是单行或者多行，同时横轴的方向决
 
 **行元素换行**
 
-<img src="E:\note\前端\笔记\css\图片\flex-行元素换行.png" style="zoom:67%;" />
+<img src="./图片/flex-行元素换行.png" style="zoom:67%;" />
 
 ```css
     flex-direction: row;
@@ -40,7 +40,7 @@ flex-wrap 属性规定flex容器是单行或者多行，同时横轴的方向决
 
 **水平排列反向换行**
 
-<img src="E:\note\前端\笔记\css\图片\flex-水平排列反向换行.png" style="zoom:67%;" />
+<img src="./图片/flex-水平排列反向换行.png" style="zoom:67%;" />
 
 ```css
 flex-direction: row;
@@ -49,7 +49,7 @@ flex-wrap: wrap-reverse;
 
 **垂直元素换行**
 
-<img src="E:\note\前端\笔记\css\图片\flex-垂直元素换行.png" style="zoom:67%;" />
+<img src="./图片/flex-垂直元素换行.png" style="zoom:67%;" />
 
 ```css
 flex-direction: column;
@@ -58,7 +58,7 @@ flex-wrap: wrap;
 
 **垂直元素反向换行**
 
-<img src="E:\note\前端\笔记\css\图片\flex-垂直元素反向换行.png" style="zoom:67%;" />
+<img src="./图片/flex-垂直元素反向换行.png" style="zoom:67%;" />
 
 ```css
 flex-direction: column;
@@ -72,7 +72,7 @@ flex-wrap: wrap-reverse;
 举例：
 下面是从右向左排列，换行向上拆分行。
 
-<img src="E:\note\前端\笔记\css\图片\flex-flow.png" style="zoom:67%;" />
+<img src="./图片/flex-flow.png" style="zoom:67%;" />
 
 ```css
 flex-flow: row-reverse wrap-reverse;
@@ -93,7 +93,7 @@ flex-flow: row-reverse wrap-reverse;
 
 **①水平排列元素，并使用 `justify-content: flex-end` 对齐到主轴终点**
 
-<img src="E:\note\前端\笔记\css\图片\justify-content-flex-end.png" style="zoom:67%;" />
+<img src="./图片/justify-content-flex-end.png" style="zoom:67%;" />
 
 ```css
 display: flex;
@@ -103,7 +103,7 @@ justify-content: flex-end;
 
 **②使用 `space-evenly` 平均分配容器元素**
 
-<img src="E:\note\前端\笔记\css\图片\justify-content-space-evenly.png" style="zoom:67%;" />
+<img src="./图片/justify-content-space-evenly.png" style="zoom:67%;" />
 
 ```css
   display: flex;
@@ -113,7 +113,7 @@ justify-content: flex-end;
 
 **③垂直排列时对齐到主轴终点**
 
-<img src="E:\note\前端\笔记\css\图片\justify-content- flex-end（垂直方向）.png" style="zoom:67%;" />
+<img src="./图片/justify-content- flex-end（垂直方向）.png" style="zoom:67%;" />
 
 ```css
   display: flex;
@@ -141,7 +141,7 @@ justify-content: flex-end;
 
 如果给子盒子设置了 `width | height | min-height | min-width | max-width | max-height` ，将影响`stretch` 的结果，因为 `stretch` 优先级低于宽高设置。
 
-<img src="E:\note\前端\笔记\css\图片\strech.png" style="zoom:67%;" />
+<img src="./图片/strech.png" style="zoom:67%;" />
 
 ```css
   article {/*父盒子*/
@@ -162,7 +162,7 @@ justify-content: flex-end;
 
 **对齐到交叉轴的顶部**
 
-<img src="E:\note\前端\笔记\css\图片\对齐到交叉轴的顶部.png" style="zoom:67%;" />
+<img src="./图片/对齐到交叉轴的顶部.png" style="zoom:67%;" />
 
 ```css
 flex-direction: row;
@@ -171,7 +171,7 @@ align-items: flex-start;
 
 **对齐到交叉轴底部**
 
-<img src="E:\note\前端\笔记\css\图片\对齐到交叉轴底部.png" style="zoom:67%;" />
+<img src="./图片/对齐到交叉轴底部.png" style="zoom:67%;" />
 
 ```css
 flex-direction: row;
@@ -180,7 +180,7 @@ align-items: flex-end;
 
 **对齐到交叉轴中心**
 
-<img src="E:\note\前端\笔记\css\图片\对齐到交叉轴中心.png" style="zoom:67%;" />
+<img src="./图片/对齐到交叉轴中心.png" style="zoom:67%;" />
 
 ```css
 flex-direction: row;
@@ -189,7 +189,7 @@ align-items: center;
 
 纵向排列时交叉轴排列
 
-<img src="E:\note\前端\笔记\css\图片\纵向排列时交叉轴排列.png" style="zoom:67%;" />
+<img src="./图片/纵向排列时交叉轴排列.png" style="zoom:67%;" />
 
 ```css
     display: flex;
@@ -213,7 +213,7 @@ align-items: center;
 
 **水平排列在交叉轴中居中排列**
 
-<img src="E:\note\前端\笔记\css\图片\水平排列在交叉轴中居中排列.png" style="zoom:67%;" />
+<img src="./图片/水平排列在交叉轴中居中排列.png" style="zoom:67%;" />
 
 ```css
     display: flex;
@@ -225,7 +225,7 @@ align-items: center;
 
 **垂直排列时交叉轴的排列**
 
-<img src="E:\note\前端\笔记\css\图片\垂直排列时交叉轴的排列.png" style="zoom:67%;" />
+<img src="./图片/垂直排列时交叉轴的排列.png" style="zoom:67%;" />
 
 ```css
     display: flex;
@@ -295,7 +295,7 @@ align-items: center;
 </article>
 ```
 
-<img src="E:\note\前端\笔记\css\图片\align-self.png" style="zoom:67%;" />
+<img src="./图片/align-self.png" style="zoom:67%;" />
 
 #### 2.flex-grow
 
@@ -316,7 +316,7 @@ align-items: center;
 最终尺寸 = 元素三宽度 - (缩小比例 x  元素 3 的宽度) X 元素宽度
 ```
 
-<img src="E:\note\前端\笔记\css\图片\flex-shrink.png" style="zoom:67%;" />
+<img src="./图片/flex-shrink.png" style="zoom:67%;" />
 
 ```css
     article div:nth-child(1) {
@@ -340,7 +340,7 @@ flex-basis 属性定义了在分配多余空间之前，项目占据的主轴空
 
 flex-basis 优先级大于 width、height。
 
-<img src="E:\note\前端\笔记\css\图片\flex-basis.png" style="zoom:67%;" />
+<img src="./图片/flex-basis.png" style="zoom:67%;" />
 
 ```css
 <style>

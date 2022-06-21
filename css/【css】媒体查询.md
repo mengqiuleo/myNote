@@ -48,7 +48,7 @@ viewport是虚拟窗口，虚拟窗口大于手机的屏幕尺寸。手机端浏
 
 这个`layout viewport`的宽度可以通过 `document.documentElement.clientWidth` 来获取。
 
-![](E:\note\前端\笔记\css\媒体查询\布局视口.png)
+![](./媒体查询/布局视口.png)
 
 
 
@@ -62,7 +62,7 @@ viewport是虚拟窗口，虚拟窗口大于手机的屏幕尺寸。手机端浏
 
 `visual viewport`的宽度可以通过`window.innerWidth` 来获取
 
-![](E:\note\前端\笔记\css\媒体查询\视觉视口.png)
+![](./媒体查询/视觉视口.png)
 
 
 
