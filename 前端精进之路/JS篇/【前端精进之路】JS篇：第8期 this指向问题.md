@@ -101,7 +101,7 @@ setTimeout(function () {
       });
 ```
 
-![](E:\note\前端\笔记\js\this\数组.jpg)
+![](./图片/数组.jpg)
 
 
 
@@ -112,7 +112,7 @@ setTimeout(function () {
       }, "abc");
 ```
 
-![](E:\note\前端\笔记\js\this\数组2.jpg)
+![](./图片/数组2.jpg)
 
 ## 三.this绑定优先级规则
 

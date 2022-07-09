@@ -53,7 +53,7 @@ if(typeof a == "undefined" ){
 alert(a);
 ```
 
-![](E:\note\前端精进之路\JS篇\图片\AST.jpg)
+![](./图片/AST.jpg)
 
 
 
