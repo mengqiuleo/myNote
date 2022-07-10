@@ -14,7 +14,7 @@
 
 #### 感谢访问本站，若喜欢请收藏，点个Star🥳，好运连连，offer终究属于你
 
-我的个人博客：[https://mengqiuleo.github.io](https://mengqiuleo.github.io/)
+我的个人博客：[https://panjingyi.top](https://panjingyi.top)
 
 csdn地址：[小飞侠Pan](https://blog.csdn.net/weixin_52834435?type=blog)
 
