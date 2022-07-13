@@ -527,6 +527,39 @@ router.post('/', (ctx) => {
 Koa类是继承Emitter类, 因此可以
 
 - 通过emit提交一个错误
+
+  ```js
+  const Koa = require('koa');//接收的是类
+  
+  const app = new Koa();
+  
+  app.use((ctx,next)=>{
+      const isLogin = false
+      if(!isLogin){
+          ctx.response.body = 'ERROR'//设置要传给用户的错误信息，然后通过app.on返回
+          //参数1；给错误取名,和下面的app.on第一个参数对应,
+          //参数2：给错误传一个参数，随便是什么，对象也好，字符串也行(对应app.on的回调函数的第一个参数)
+          //参数3：ctx:传ctx的目的是为了给用户返回错误信息，如status和response.body
+          // ctx.app.emit('error',new Error("密码错误"),ctx)
+          ctx.app.emit('error','密码错误',ctx)//此函数将错误信息传给了app.on()
+          
+      }
+  
+  })
+  app.on('error',(error,ctx)=>{
+      ctx.status = 400
+      console.log(error)//打印了: 密码错误
+      console.log("-------------------")// 打印了: -------------------
+      console.log(ctx.response.body)//打印了: ERROR
+  })
+  
+  app.listen(8080,()=>{
+      console.log('启动成功')
+  })
+  ```
+
+  
+
 - 通过on进行统一错误处理
 
 ```js
