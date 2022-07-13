@@ -120,6 +120,39 @@ connection.execute(statement, [6000, 7], (err, results) => {
 - 连接池可以在需要的时候自动创建连接，并且创建的连接不会被销毁，会放到连接池中，后续可以继续使用；
 - 我们可以在创建连接池的时候设置LIMIT，也就是最大创建个数；
 
+
+
+**判断是否连接成功**
+
+```js
+const mysql = require('mysql2');
+
+// 1.创建连接池
+const connections = mysql.createPool({
+  host: 'localhost',
+  port: 3306,
+  database: 'coderhub',
+  user: 'root',
+  password: 'Coderwhy888.',
+  connectionLimit: 10
+});
+
+connections.getConnection((err, conn) => {
+  conn.connect((err) => {
+    if(err){
+      console.log('连接失败：',err)
+    } else {
+      console.log('数据库连接成功~')
+    }
+  })
+})
+
+```
+
+
+
+**简单使用数据库**
+
 ```js
 const mysql = require('mysql2');
 
