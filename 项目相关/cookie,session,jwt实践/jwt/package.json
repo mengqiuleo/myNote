@@ -1,0 +1,18 @@
+{
+  "name": "jwt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.4",
+    "koa-router": "^11.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
