@@ -229,7 +229,7 @@
 
 ## 三、原理图
 
-![](./axios图片/Axios系统学习笔记原理图.png)
+![](E:\note\前端\笔记\ajax、promise\axios图片\Axios系统学习笔记原理图.png)
 
 
 
@@ -344,7 +344,7 @@
 
 控制台输出结果：
 
-![](./axios图片/拦截器结果.jpg)
+![](E:\note\前端\笔记\ajax、promise\axios图片\拦截器结果.jpg)
 
 
 
@@ -410,7 +410,7 @@
 
 控制台输出结果：
 
-![](./axios图片/结果2.jpg)
+![](E:\note\前端\笔记\ajax、promise\axios图片\结果2.jpg)
 
 > 请求拦截器是后进先执行，响应拦截器是先进先执行
 
@@ -463,5 +463,51 @@
       cancel();
     }
   </script>
+```
+
+
+
+## 七、axios在真实项目中的多种传参方式
+
+### 前端传参
+
+```js
+axios({
+  method: 'PUT',
+  url: '/products/' + 100, //params传参
+  params: { //query传参
+    page: 1,
+    perPage: 10
+  },
+  headers: { //请求头传参
+    'X-hahaha': '666',
+  },
+  data: { // 请求体传参
+    name: 1,
+    sex: 2
+  }
+})
+```
+
+
+
+### 对应的请求地址
+
+```
+PUT /products/100?page=1&perPage=10
+X-hahaha: 666 //请求头
+ 
+{"name": 1, "sex": 2} //请求体
+```
+
+
+
+### 后端拿到参数
+
+```js
+request.headers['X-hahaha'] //"666"
+request.body.name //1
+request.query.page //1
+request.params.id //100
 ```
 
