@@ -1,7 +1,7 @@
 /*
  * @Author: Pan Jingyi
  * @Date: 2022-10-19 14:55:13
- * @LastEditTime: 2022-10-19 16:28:30
+ * @LastEditTime: 2022-10-21 16:41:32
  */
 const STATUS = { //存取所需要的状态
   PENDING : 'PENDING',
@@ -102,7 +102,7 @@ class Promise {
           }
         }, 0);
       }
-      if(this.status == STATUS.FULFILLED){
+      if(this.status == STATUS.PENDING){
         this.onResolvedCallbacks.push(() => {
           setTimeout(() => {
             try{
