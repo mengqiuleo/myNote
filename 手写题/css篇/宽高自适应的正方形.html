@@ -1,0 +1,32 @@
+<!--
+ * @Author: Pan Jingyi
+ * @Date: 2022-11-10 23:44:00
+ * @LastEditTime: 2022-11-10 23:50:03
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>宽高自适应的正方形</title>
+  <style>
+    /* .square {
+      width: 10%;
+      height: 10vw;
+      background-color: bisque;
+    } */
+    
+    /* 利用元素的margin/padding百分比是相对父元素width的性质来实现： */
+    .square {
+      width: 20%;
+      height: 0;
+      padding-top: 20%;
+      background: orange;
+    }
+  </style>
+</head>
+<body>
+  <div class="square"></div>
+</body>
+</html>

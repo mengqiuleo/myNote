@@ -1,0 +1,37 @@
+<!--
+ * @Author: Pan Jingyi
+ * @Date: 2022-11-11 00:06:37
+ * @LastEditTime: 2022-11-11 00:06:40
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小于12px的字体</title>
+    <style>
+        div {
+            width: 300px;
+            height: 30px;
+            margin-bottom: 5px;
+            background: rgb(206, 151, 151);
+        }
+        .box1 {
+            font-size: 12px;
+        }
+        .box2 {
+            font-size: 10px;
+            transform: scale(0.83333);
+            transform-origin: 0 0;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">我是正常的12px的文字大小 Hello world!</div>
+    <div class="box1">我是正常的12px的文字大小 Hello world!</div>
+    <div class="box2">我是正常的10px的文字大小 Hello world!</div>
+    <div class="box2">我是正常的10px的文字大小 Hello world!</div>
+</body>
+</html>

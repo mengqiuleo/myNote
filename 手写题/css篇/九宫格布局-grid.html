@@ -1,0 +1,40 @@
+<!--
+ * @Author: Pan Jingyi
+ * @Date: 2022-11-11 00:11:13
+ * @LastEditTime: 2022-11-11 00:19:38
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>九宫格布局-grid</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 100px 100px 100px;
+      /* grid-template-columns: 1fr 1fr 1fr; */
+      grid-template-rows: 100px 100px 100px;
+      grid-gap: 10px;
+      padding: 10px;
+    }
+    .item {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+  </div>
+</body>
+</html>

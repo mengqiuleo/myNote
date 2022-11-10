@@ -1,0 +1,34 @@
+<!--
+ * @Author: Pan Jingyi
+ * @Date: 2022-11-10 23:52:20
+ * @LastEditTime: 2022-11-10 23:59:27
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>0.5px的线</title>
+  <style>
+    /* 直接画 */
+    /* .half-px {
+      width: 300px;
+      background-color: black;
+      height: 0.5px;
+    } */
+
+    /* 缩放功能 */
+    .half-px {
+      width: 300px;
+      background-color: red;
+      height: 1px;
+      transform: scale(1, 0.5); 
+      /* 三个参数：x,y,z轴 */
+    }
+  </style>
+</head>
+<body>
+  <div class="half-px"></div>
+</body>
+</html>

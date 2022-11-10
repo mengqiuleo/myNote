@@ -1,0 +1,35 @@
+<!--
+ * @Author: Pan Jingyi
+ * @Date: 2022-11-11 00:38:12
+ * @LastEditTime: 2022-11-11 00:39:53
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>田字格布局-grid</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 200px 200px;
+      /* grid-template-columns: 1fr 1fr 1fr; */
+      grid-template-rows: 200px 200px;
+      grid-gap: 10px;
+      padding: 10px;
+    }
+    .item {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+</body>
+</html>
