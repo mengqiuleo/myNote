@@ -1,0 +1,45 @@
+<!--
+ * @Author: Pan Jingyi
+ * @Date: 2022-11-12 13:10:06
+ * @LastEditTime: 2022-11-12 13:10:32
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id='debounce' />
+
+    <script>
+      // 模拟一段输入框输入事件
+      function ajax(content) {
+        console.log(content)
+      }
+
+      function debounce(fn, wait){
+        let timer = null;
+        return function(){
+          let context = this, args = arguments
+          if(timer){
+            clearTimeout(timer)
+            timer = null
+          }
+
+          timer = setTimeout(() => {
+            fn.call(context, ...args)
+          }, wait);
+        }
+      }
+
+      let input = document.getElementById('debounce')
+      let debounceAjax = debounce(ajax, 500)
+      input.addEventListener('keyup', function(e){
+        debounceAjax(e.target.value)
+      })
+    </script>
+  </body>
+</html>

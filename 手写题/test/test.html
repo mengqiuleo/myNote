@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>多行文本溢出</title>
+    <style>
+      .box {
+        width: 150px;
+        height: 80px;
+        border: 1px solid red;
+
+        /* 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示  */
+        display: -webkit-box;
+        /* 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式  */
+        -webkit-box-orient: vertical;
+        /* 用来限制在一个块元素显示的文本的行数 3行 */
+        -webkit-line-clamp: 4;
+        /* 文本超出部分隐藏 */
+        overflow: hidden;
+        /* ellipsis:当对象内文本溢出时显示省略标记(...) */
+        text-overflow: ellipsis;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      文本溢出文本溢出文本溢出文本溢出文本溢出文本溢出文本溢出文本溢出文本溢出文本溢出
+    </div>
+  </body>
+</html>

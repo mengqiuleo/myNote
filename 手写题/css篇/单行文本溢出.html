@@ -1,0 +1,33 @@
+<!--
+ * @Author: Pan Jingyi
+ * @Date: 2022-11-12 22:22:00
+ * @LastEditTime: 2022-11-12 22:22:05
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>单行文本溢出 </title>
+    <style>
+      .box {
+        width: 200px;
+        height: 50px;
+        border: 1px solid red;
+
+        /* 文本超出部分隐藏 */
+        overflow: hidden;
+        /* ellipsis:当对象内文本溢出时显示省略标记(...) */
+        text-overflow: ellipsis;
+        /* 作用是设置文本不换行 一行显示 */
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      文本溢出文本溢出文本溢出文本溢出文本溢出文本溢出文本溢出文本溢出文本溢出文本溢出
+    </div>
+  </body>
+</html>

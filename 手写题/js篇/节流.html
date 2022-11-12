@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="throttle">点击</button>
+
+  <script>
+    // 模拟一段点击事件
+    function click(content) {
+      console.log('click')
+    }
+
+    function throttle(fn, wait){
+      let date = Date.now()
+      return function(){
+        let context = this, args = arguments
+        let now = Date.now()
+        if(now - date > wait){
+          fn.call(context, args)
+          date = Date.now()
+        }
+      }
+    }
+
+    let button = document.getElementById('throttle')
+    let debounceClick = throttle(click, 1000)
+    button.addEventListener('click', function(){
+      debounceClick()
+    })
+  </script>
+</body>
+</html>
