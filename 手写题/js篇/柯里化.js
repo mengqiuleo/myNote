@@ -1,23 +1,21 @@
 /*
  * @Author: Pan Jingyi
  * @Date: 2022-11-06 14:11:58
- * @LastEditTime: 2022-11-06 14:14:32
+ * @LastEditTime: 2022-11-27 21:22:32
  */
 function currying(fn, ...args){
   const length = fn.length;
 
   let allArgs = [...args];
 
-  const res = (...newArgs) => {
-    allArgs = [...allArgs, ...newArgs];
-
+  return function proxyFn(...newArgs){
+    allArgs = [...allArgs, ...newArgs]
     if(allArgs.length === length){
-      return fn(...allArgs);
-    }else{
-      return res;
+      return fn.apply(this, allArgs)
+    }else {
+      return proxyFn
     }
-  } 
-  return res;
+  }
 }
 
 //test
